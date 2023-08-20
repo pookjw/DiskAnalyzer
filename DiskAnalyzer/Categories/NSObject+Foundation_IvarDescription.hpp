@@ -1,5 +1,5 @@
 //
-//  NSObject+Foundation_IvarDescription.h
+//  NSObject+Foundation_IvarDescription.hpp
 //  IvarDescription
 //
 //  Created by Jinwoo Kim on 1/17/23.

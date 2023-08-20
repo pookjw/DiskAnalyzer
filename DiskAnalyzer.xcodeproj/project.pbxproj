@@ -43,7 +43,7 @@
 		4FCE0F7D2A911C4700ADF32B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4FCE0F802A911DE600ADF32B /* VolumesWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VolumesWindow.hpp; sourceTree = "<group>"; };
 		4FCE0F812A911DE600ADF32B /* VolumesWindow.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VolumesWindow.mm; sourceTree = "<group>"; };
-		4FCE0F832A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Foundation_IvarDescription.h"; sourceTree = "<group>"; };
+		4FCE0F832A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "NSObject+Foundation_IvarDescription.hpp"; sourceTree = "<group>"; };
 		4FCE0F842A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+Foundation_IvarDescription.mm"; sourceTree = "<group>"; };
 		4FCE0F862A911FAA00ADF32B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4FCE0F882A9121BF00ADF32B /* VolumesViewController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VolumesViewController.hpp; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		4FA74A732A91F8E300E092C0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				4FCE0F832A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.h */,
+				4FCE0F832A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.hpp */,
 				4FCE0F842A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.mm */,
 				4FA74A742A91F90100E092C0 /* NSTextField+LabelStyle.hpp */,
 				4FA74A752A91F90100E092C0 /* NSTextField+LabelStyle.mm */,
