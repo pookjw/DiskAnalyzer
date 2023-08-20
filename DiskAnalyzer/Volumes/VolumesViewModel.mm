@@ -44,12 +44,14 @@
         [snapshot appendSectionsWithIdentifiers:@[volumesSectionModel]];
         
         NSArray<NSURL *> *mountedVolumeURLs = [NSFileManager.defaultManager mountedVolumeURLsIncludingResourceValuesForKeys:nullptr options:NSVolumeEnumerationSkipHiddenVolumes];
-//        NSArray<NSURL *> *mountedVolumeURLs = [NSFileManager.defaultManager mountedVolumeURLsIncludingResourceValuesForKeys:nullptr options:0];
         
         __block std::vector<VolumesItemModel *> volumeItemModels {};
         
         [mountedVolumeURLs enumerateObjectsUsingBlock:^(NSURL * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            VolumesItemModel *demoItemModel = [[VolumesItemModel alloc] initWithVolumeInfo:{obj.path.UTF8String}];
+            const std::string title {[obj.path.lastPathComponent cStringUsingEncoding:NSUTF8StringEncoding]};
+            const _VolumesItemModel::VolumeInfo volumeInfo {title, obj};
+            
+            VolumesItemModel *demoItemModel = [[VolumesItemModel alloc] initWithVolumeInfo:volumeInfo];
             volumeItemModels.push_back([demoItemModel retain]);
             [demoItemModel release];
         }];

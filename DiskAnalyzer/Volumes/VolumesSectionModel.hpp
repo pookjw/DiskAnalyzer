@@ -20,6 +20,7 @@ enum SectionType {
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithVolumes;
+- (instancetype)initWithType:(_VolumesSectionModel::SectionType)type NS_DESIGNATED_INITIALIZER;
 @end
 
 NS_HEADER_AUDIT_END(nullability, sendability)

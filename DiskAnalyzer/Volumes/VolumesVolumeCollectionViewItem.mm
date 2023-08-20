@@ -8,6 +8,7 @@
 #import "VolumesVolumeCollectionViewItem.hpp"
 #import "NSTextField+LabelStyle.hpp"
 #import <objc/message.h>
+#import <optional>
 
 namespace _VolumesVolumeCollectionViewItem {
     NSComparisonResult comparator(__kindof NSView *firstView, __kindof NSView *secondView, void * _Nullable context) {
@@ -26,6 +27,7 @@ namespace _VolumesVolumeCollectionViewItem {
 
 @interface VolumesVolumeCollectionViewItem ()
 @property (retain) NSVisualEffectView *visualEffectView;
+@property (assign) std::optional<_VolumesItemModel::VolumeInfo> volumeInfo;
 @end
 
 @implementation VolumesVolumeCollectionViewItem
@@ -53,7 +55,9 @@ namespace _VolumesVolumeCollectionViewItem {
 }
 
 - (void)configureWithVolumeInfo:(_VolumesItemModel::VolumeInfo)volumeInfo {
-    NSString *stringValue = [[NSString alloc] initWithCString:volumeInfo.path.data() encoding:NSUTF8StringEncoding];
+    self.volumeInfo = volumeInfo;
+    
+    NSString *stringValue = [[NSString alloc] initWithCString:volumeInfo.title.data() encoding:NSUTF8StringEncoding];
     self.textField.stringValue = stringValue;
     [stringValue release];
 }
@@ -128,7 +132,8 @@ namespace _VolumesVolumeCollectionViewItem {
 }
 
 - (void)didTriggerGestureRecognizer:(NSClickGestureRecognizer *)sender {
-    NSLog(@"%@", sender);
+    if (self.volumeInfo == std::nullopt) return;
+    NSLog(@"%@", self.volumeInfo.value().url);
 }
 
 @end

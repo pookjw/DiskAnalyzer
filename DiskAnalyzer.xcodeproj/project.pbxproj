@@ -12,6 +12,7 @@
 		4FA74A6C2A91E64000E092C0 /* VolumesItemModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FA74A6B2A91E64000E092C0 /* VolumesItemModel.mm */; };
 		4FA74A722A91F7F900E092C0 /* VolumesVolumeCollectionViewItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FA74A712A91F7F900E092C0 /* VolumesVolumeCollectionViewItem.mm */; };
 		4FA74A762A91F90100E092C0 /* NSTextField+LabelStyle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FA74A752A91F90100E092C0 /* NSTextField+LabelStyle.mm */; };
+		4FA74A7E2A92588900E092C0 /* AnalyzeWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FA74A7D2A92588900E092C0 /* AnalyzeWindow.mm */; };
 		4FCE0F692A911C0F00ADF32B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FCE0F682A911C0F00ADF32B /* AppDelegate.mm */; };
 		4FCE0F6E2A911C1200ADF32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FCE0F6D2A911C1200ADF32B /* Assets.xcassets */; };
 		4FCE0F732A911C1200ADF32B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FCE0F722A911C1200ADF32B /* main.mm */; };
@@ -33,6 +34,8 @@
 		4FA74A712A91F7F900E092C0 /* VolumesVolumeCollectionViewItem.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VolumesVolumeCollectionViewItem.mm; sourceTree = "<group>"; };
 		4FA74A742A91F90100E092C0 /* NSTextField+LabelStyle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "NSTextField+LabelStyle.hpp"; sourceTree = "<group>"; };
 		4FA74A752A91F90100E092C0 /* NSTextField+LabelStyle.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSTextField+LabelStyle.mm"; sourceTree = "<group>"; };
+		4FA74A7C2A92588900E092C0 /* AnalyzeWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AnalyzeWindow.hpp; sourceTree = "<group>"; };
+		4FA74A7D2A92588900E092C0 /* AnalyzeWindow.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AnalyzeWindow.mm; sourceTree = "<group>"; };
 		4FCE0F642A911C0F00ADF32B /* DiskAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiskAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCE0F672A911C0F00ADF32B /* AppDelegate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hpp; sourceTree = "<group>"; };
 		4FCE0F682A911C0F00ADF32B /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -73,6 +76,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		4FA74A7B2A92586800E092C0 /* Analyze */ = {
+			isa = PBXGroup;
+			children = (
+				4FA74A7C2A92588900E092C0 /* AnalyzeWindow.hpp */,
+				4FA74A7D2A92588900E092C0 /* AnalyzeWindow.mm */,
+			);
+			path = Analyze;
+			sourceTree = "<group>";
+		};
 		4FCE0F5B2A911C0F00ADF32B = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +109,7 @@
 				4FCE0F682A911C0F00ADF32B /* AppDelegate.mm */,
 				4FA74A732A91F8E300E092C0 /* Categories */,
 				4FCE0F7F2A911DCB00ADF32B /* Volumes */,
+				4FA74A7B2A92586800E092C0 /* Analyze */,
 				4FCE0F6D2A911C1200ADF32B /* Assets.xcassets */,
 				4FCE0F722A911C1200ADF32B /* main.mm */,
 				4FCE0F742A911C1200ADF32B /* DiskAnalyzer.entitlements */,
@@ -211,6 +224,7 @@
 				4FCE0F852A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.mm in Sources */,
 				4FA74A692A91E63700E092C0 /* VolumesSectionModel.mm in Sources */,
 				4FCE0F732A911C1200ADF32B /* main.mm in Sources */,
+				4FA74A7E2A92588900E092C0 /* AnalyzeWindow.mm in Sources */,
 				4FA74A762A91F90100E092C0 /* NSTextField+LabelStyle.mm in Sources */,
 				4FCE0F692A911C0F00ADF32B /* AppDelegate.mm in Sources */,
 			);

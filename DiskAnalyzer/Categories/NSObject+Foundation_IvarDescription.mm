@@ -5,7 +5,7 @@
 //  Created by Jinwoo Kim on 1/17/23.
 //
 
-#import "NSObject+Foundation_IvarDescription.h"
+#import "NSObject+Foundation_IvarDescription.hpp"
 #import <objc/runtime.h>
 
 @implementation NSObject (Foundation_IvarDescription)

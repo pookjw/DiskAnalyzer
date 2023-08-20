@@ -9,7 +9,6 @@
 
 @interface VolumesSectionModel ()
 @property (assign) _VolumesSectionModel::SectionType type;
-- (instancetype)initWithType:(_VolumesSectionModel::SectionType)type NS_DESIGNATED_INITIALIZER;
 @end
 
 @implementation VolumesSectionModel

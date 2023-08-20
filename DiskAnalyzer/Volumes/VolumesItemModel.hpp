@@ -18,8 +18,13 @@ enum ItemType {
 };
 
 struct VolumeInfo {
-    const std::string path;
+    std::string title;
+    NSURL *url = nullptr;
     
+    VolumeInfo(std::string title, NSURL *url);
+    ~VolumeInfo();
+    VolumeInfo(const VolumeInfo &other);
+    VolumeInfo & operator=(const VolumeInfo &other);
     bool operator==(const VolumeInfo &) const;
 };
 }
@@ -37,6 +42,7 @@ struct hash<_VolumesItemModel::VolumeInfo> {
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithVolumeInfo:(_VolumesItemModel::VolumeInfo)volumeInfo;
+- (instancetype)initWithType:(_VolumesItemModel::ItemType)type variantData:(std::variant<_VolumesItemModel::VolumeInfo>)variantData NS_DESIGNATED_INITIALIZER;
 @end
 
 NS_HEADER_AUDIT_END(nullability, sendability)
