@@ -13,6 +13,10 @@
 		4FA74A722A91F7F900E092C0 /* VolumesVolumeCollectionViewItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FA74A712A91F7F900E092C0 /* VolumesVolumeCollectionViewItem.mm */; };
 		4FA74A762A91F90100E092C0 /* NSTextField+LabelStyle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FA74A752A91F90100E092C0 /* NSTextField+LabelStyle.mm */; };
 		4FA74A7E2A92588900E092C0 /* AnalyzeWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FA74A7D2A92588900E092C0 /* AnalyzeWindow.mm */; };
+		4FC83EEE2A9386BD0029A195 /* AnalyzeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FC83EED2A9386BD0029A195 /* AnalyzeViewController.mm */; };
+		4FC83EF12A93887E0029A195 /* AnalyzeService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FC83EF02A93887E0029A195 /* AnalyzeService.mm */; };
+		4FC83EF42A9388E50029A195 /* AnalyzeViewModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FC83EF32A9388E50029A195 /* AnalyzeViewModel.mm */; };
+		4FC83EFC2A93B2520029A195 /* AnaylzeFileNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FC83EFB2A93B2520029A195 /* AnaylzeFileNode.mm */; };
 		4FCE0F692A911C0F00ADF32B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FCE0F682A911C0F00ADF32B /* AppDelegate.mm */; };
 		4FCE0F6E2A911C1200ADF32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FCE0F6D2A911C1200ADF32B /* Assets.xcassets */; };
 		4FCE0F732A911C1200ADF32B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FCE0F722A911C1200ADF32B /* main.mm */; };
@@ -36,6 +40,14 @@
 		4FA74A752A91F90100E092C0 /* NSTextField+LabelStyle.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSTextField+LabelStyle.mm"; sourceTree = "<group>"; };
 		4FA74A7C2A92588900E092C0 /* AnalyzeWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AnalyzeWindow.hpp; sourceTree = "<group>"; };
 		4FA74A7D2A92588900E092C0 /* AnalyzeWindow.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AnalyzeWindow.mm; sourceTree = "<group>"; };
+		4FC83EEC2A9386BD0029A195 /* AnalyzeViewController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AnalyzeViewController.hpp; sourceTree = "<group>"; };
+		4FC83EED2A9386BD0029A195 /* AnalyzeViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AnalyzeViewController.mm; sourceTree = "<group>"; };
+		4FC83EEF2A93887E0029A195 /* AnalyzeService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AnalyzeService.hpp; sourceTree = "<group>"; };
+		4FC83EF02A93887E0029A195 /* AnalyzeService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AnalyzeService.mm; sourceTree = "<group>"; };
+		4FC83EF22A9388E50029A195 /* AnalyzeViewModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AnalyzeViewModel.hpp; sourceTree = "<group>"; };
+		4FC83EF32A9388E50029A195 /* AnalyzeViewModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AnalyzeViewModel.mm; sourceTree = "<group>"; };
+		4FC83EFA2A93B2520029A195 /* AnaylzeFileNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AnaylzeFileNode.hpp; sourceTree = "<group>"; };
+		4FC83EFB2A93B2520029A195 /* AnaylzeFileNode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AnaylzeFileNode.mm; sourceTree = "<group>"; };
 		4FCE0F642A911C0F00ADF32B /* DiskAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiskAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCE0F672A911C0F00ADF32B /* AppDelegate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hpp; sourceTree = "<group>"; };
 		4FCE0F682A911C0F00ADF32B /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -79,10 +91,34 @@
 		4FA74A7B2A92586800E092C0 /* Analyze */ = {
 			isa = PBXGroup;
 			children = (
-				4FA74A7C2A92588900E092C0 /* AnalyzeWindow.hpp */,
-				4FA74A7D2A92588900E092C0 /* AnalyzeWindow.mm */,
+				4FC83EF62A938B120029A195 /* Presentation */,
+				4FC83EF52A938B0D0029A195 /* Service */,
 			);
 			path = Analyze;
+			sourceTree = "<group>";
+		};
+		4FC83EF52A938B0D0029A195 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4FC83EEF2A93887E0029A195 /* AnalyzeService.hpp */,
+				4FC83EF02A93887E0029A195 /* AnalyzeService.mm */,
+				4FC83EFA2A93B2520029A195 /* AnaylzeFileNode.hpp */,
+				4FC83EFB2A93B2520029A195 /* AnaylzeFileNode.mm */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4FC83EF62A938B120029A195 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4FA74A7C2A92588900E092C0 /* AnalyzeWindow.hpp */,
+				4FA74A7D2A92588900E092C0 /* AnalyzeWindow.mm */,
+				4FC83EEC2A9386BD0029A195 /* AnalyzeViewController.hpp */,
+				4FC83EED2A9386BD0029A195 /* AnalyzeViewController.mm */,
+				4FC83EF22A9388E50029A195 /* AnalyzeViewModel.hpp */,
+				4FC83EF32A9388E50029A195 /* AnalyzeViewModel.mm */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		4FCE0F5B2A911C0F00ADF32B = {
@@ -217,16 +253,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA74A6C2A91E64000E092C0 /* VolumesItemModel.mm in Sources */,
+				4FC83EEE2A9386BD0029A195 /* AnalyzeViewController.mm in Sources */,
 				4FA74A662A91E52900E092C0 /* VolumesViewModel.mm in Sources */,
 				4FCE0F822A911DE600ADF32B /* VolumesWindow.mm in Sources */,
+				4FC83EFC2A93B2520029A195 /* AnaylzeFileNode.mm in Sources */,
 				4FCE0F8A2A9121BF00ADF32B /* VolumesViewController.mm in Sources */,
 				4FA74A722A91F7F900E092C0 /* VolumesVolumeCollectionViewItem.mm in Sources */,
+				4FC83EF12A93887E0029A195 /* AnalyzeService.mm in Sources */,
 				4FCE0F852A911E0D00ADF32B /* NSObject+Foundation_IvarDescription.mm in Sources */,
 				4FA74A692A91E63700E092C0 /* VolumesSectionModel.mm in Sources */,
 				4FCE0F732A911C1200ADF32B /* main.mm in Sources */,
 				4FA74A7E2A92588900E092C0 /* AnalyzeWindow.mm in Sources */,
 				4FA74A762A91F90100E092C0 /* NSTextField+LabelStyle.mm in Sources */,
 				4FCE0F692A911C0F00ADF32B /* AppDelegate.mm in Sources */,
+				4FC83EF42A9388E50029A195 /* AnalyzeViewModel.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,9 +33,9 @@ static NSToolbarIdentifier const toolbarIdentifier = @"VolumesWindowToolbar";
         self.toolbar = toolbar;
         [toolbar release];
         
-        VolumesViewController *viewController = [VolumesViewController new];
-        self.contentViewController = viewController;
-        [viewController release];
+        VolumesViewController *contentViewController = [VolumesViewController new];
+        self.contentViewController = contentViewController;
+        [contentViewController release];
     }
     
     return self;

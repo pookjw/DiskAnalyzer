@@ -7,6 +7,7 @@
 
 #import "VolumesVolumeCollectionViewItem.hpp"
 #import "NSTextField+LabelStyle.hpp"
+#import "AnalyzeWindow.hpp"
 #import <objc/message.h>
 #import <optional>
 
@@ -133,7 +134,12 @@ namespace _VolumesVolumeCollectionViewItem {
 
 - (void)didTriggerGestureRecognizer:(NSClickGestureRecognizer *)sender {
     if (self.volumeInfo == std::nullopt) return;
-    NSLog(@"%@", self.volumeInfo.value().url);
+    
+    NSURL *url = self.volumeInfo.value().url;
+    
+    AnalyzeWindow *window = [[AnalyzeWindow alloc] initWithURL:url];
+    [window makeKeyAndOrderFront:nullptr];
+    [window release];
 }
 
 @end

@@ -19,7 +19,7 @@ enum ItemType {
 
 struct VolumeInfo {
     std::string title;
-    NSURL *url = nullptr;
+    NSURL * _Nullable url = nullptr;
     
     VolumeInfo(std::string title, NSURL *url);
     ~VolumeInfo();
